@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global gallary|CSS</title>
+    <style>
+        body{min-height: 100vh;width: 100%;
+            background-image: linear-gradient(20deg,orange 50%, yellow 70%);}
+        img{width:300px;border: 20px solid white;
+            margin-right:-172px;margin-left:-172px;transition: all 2s ease;}
+        img:hover{transform:translateY(50px);transform-origin:0 0;}
+        #gallary{margin-top: 200px;text-align: center;}
+        .i-1{transform: rotate(40deg);border-color:#737373;}
+        .i-2{transform: rotate(20deg);border-color:#999999;}
+        .i-3{transform: rotate(0deg);border-color:#b3b3b3;}
+        .i-4{transform: rotate(-20deg);border-color:#cccccc;}
+        .i-5{transform: rotate(-40deg);}
+    </style>
+</head>
+<body>
+    <p id="gallary">
+    <img class="i-1" src="https://fastly.picsum.photos/id/999/400/600.jpg?hmac=nbYBhKkGrVEaUtRSv9SI5zlpRHke-EWp5C7I6TObmWM" alt="food">
+    <img  class="i-2" src="https://fastly.picsum.photos/id/677/400/600.jpg?hmac=04H8G2XjwnNY-AXRXidAhv9KlNdw-PY0qwOArNJ1xq0" alt="sky">
+    <img  class="i-3" src="https://fastly.picsum.photos/id/905/400/600.jpg?hmac=8cZccdJZOJPu0rTcSqsST9KZ8wT2LSWiDiksrYgcjjw" alt="mountan">
+    <img  class="i-4" src="https://fastly.picsum.photos/id/195/400/600.jpg?hmac=6IEN6YazF8dljoKyyAGpgKI3E6DEdJWr8e9JWvSXNJM" alt="street">
+    <img  class="i-5" src="https://fastly.picsum.photos/id/921/400/600.jpg?hmac=e8PhzjTAs114fUq07ZnwWOzyZT4m2ABN5es_S8UuxqM" alt="tropics">
+</p>
+</body>
+</html>
