@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Block|CSS</title>
+    <style>
+        body{background-color: black;}
+        #city{background-color: aquamarine;width: 400px;height: 400px;border: 5px solid red;}
+        #square{background-color: gray;width: 150px;height: 150px;display: inline-block;margin-right: -4px;}
+        .streetA{background-color: dimgray;height:150px;width:250px;display: inline-block;}
+        #left-band-h{width: inherit;height: 73px;border-bottom: 2px solid white;display:block;}
+        .band-marker-h1{width:inherit ;height: 36px;border-bottom: 2px dashed white;display:block;}
+        .band-marker-h2{width:inherit ;height: 36px; ;border-bottom: 2px dashed white;display:block;}
+        .streetB{background-color: dimgray;height: 250px;width: 150px;margin-top: -4px;}
+        #left-band-v{width: 73px;height: inherit;border-right: 2px solid white;display: inline-block;}
+        .band-marker-v1{width: 36px;height: inherit;border-right: 2px dashed white;display: inline-block;}
+        .band-marker-v2{width: 36px;height: inherit;border-right: 2px dashed white;display: inline-block;}
+    </style>
+</head>
+<body>
+    <div id="city">
+        <div id="square"></div>
+        <div class="streetA"><div id="left-band-h"><div class="band-marker-h1"></div></div><div class="band-marker-h2"></div></div>
+        <div class="streetB">
+            <div id="left-band-v">
+                <div class="band-marker-v1"></div></div>
+                <div class="band-marker-v2"></div>
+        </div>
+    </div>
+</body>
+</html>
