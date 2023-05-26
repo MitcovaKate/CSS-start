@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Block|CSS</title>
+    <style>
+        body{background-color: black;}
+        .street{border: 1px dotted red;background-color: aquamarine;}
+        .house{ width:150px;display: inline-block;margin-right: 30px;}
+        .house-roof{ border: 75px solid brown;width: 0px;height:0px ;
+            border-top-width: 0px;
+            border-bottom-width: 90px;
+            border-left-color: transparent;
+            border-right-color: transparent;}
+        .house-wall{background-color: antiquewhite;width:150px;height:150px;}
+        .house-window{border:5px solid rgb(57, 26, 26);
+        width: 50px;height:50px ;background-color: blue;
+        transform:translateX(45px) translateY(45px) ;
+        }
+        .window-frame-v{width:24px; height: 50px; border-right: 2px solid rgb(46, 46, 53);}
+        .window-frame-h1{height:24px; border-top: 2px solid rgb(57, 26, 26);transform: translateY(20px);}
+        .tower{background-color: bisque;height: 300px;width:100px ;display: inline-block;margin-right: 30px;}
+        .balcony-1{background-color: rgb(107, 87, 36);height: 10px;width:20px ;border: 10px solid bisque;
+            border-top-width: 7px;
+            border-bottom-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;transform:translateX(10px) translateY(20px)}
+        .balcony-2{background-color: rgb(107, 87, 36);height: 10px;width:20px ;border: 10px solid bisque;
+            border-top-width: 7px;
+            border-bottom-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;transform:translateX(40px) translateY(60px)}
+            .balcony-3{background-color: rgb(107, 87, 36);height: 10px;width:20px ;border: 10px solid bisque;
+            border-top-width: 7px;
+            border-bottom-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;transform:translateX(10px) translateY(100px)}
+            .balcony-4{background-color: rgb(107, 87, 36);height: 10px;width:20px ;border: 10px solid bisque;
+            border-top-width: 7px;
+            border-bottom-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;transform:translateX(40px) translateY(140px)}
+            .tower-door{height: 40px;width: 20px;background-color: rgb(49, 79, 57);
+                transform:translateX(40px) translateY(192px)}
+        .cloud{display: inline-block;vertical-align: top;padding-top: 20px;}
+        .cottage{display: inline-block;}
+        .cottage-roof{height: 1px;width: 30px; border: 85px solid brown;
+            border-top-width: 0px;
+            border-bottom-width: 90px;
+            border-left-color: transparent;
+            border-right-color: transparent;}
+            .cottage-wall{background-color: blanchedalmond;
+                height: 100px;width: 200px;}
+            .cottage-window{border:5px solid rgb(41, 48, 42);
+             width: 50px;height:50px ;
+             background-color: blue;
+             transform:translateX(70px) translateY(20px) ;}
+            .sun{display: inline-block;vertical-align: top; padding-top: 40px;}
+            .tree{display: inline-block;margin-right: 30px;}
+            .yeard{height: 20px; 
+            background-image: url(https://img.freepik.com/free-vector/green-grass-vector-seamless-texture-lawn-nature-meadow-plant-field-natural-outdoor-illustration_1284-47056.jpg?w=826&t=st=1685126712~exp=1685127312~hmac=86aeb2e7a0d5d700825b99d58f6d04cd4b7bf93e1a10724f6361dbc43ff71941);background-repeat:repeat;margin-top: -4px;}
+</style>
+</head>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="window-frame-v">
+                        <div class="window-frame-h1"></div>
+                    </div><div class="window-frame-h2"></div>
+                    </div>
+        </div></div>
+    <div class="tower">
+        <div class="balcony-1"></div>
+        <div class="balcony-2"></div>
+        <div class="balcony-3"></div>
+        <div class="balcony-4"></div>
+    <div class="tower-door"></div></div>
+    <div class="cloud"><img src="https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/128/42659-cloud-icon.png" alt="cloud"></div>
+    <div class="cottage"><div class="cottage-roof"></div><div class="cottage-wall"><div class="cottage-window"></div></div>
+    </div>
+    <div class="sun"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/128/Status-weather-clear-icon.png" alt="sun"></div>
+    <div class="tree"><img src="https://icons.iconarchive.com/icons/iconarchive/plasticine/72/Tree-Green-icon.png" alt="tree"></div>
+    <div class="yeard"></div>
+</div>
+</body>
+</html>
