@@ -11,7 +11,7 @@
         .folder{color: white;
         background-image: url(https://icons.iconarchive.com/icons/papirus-team/papirus-places/72/folder-red-icon.png);
         background-repeat: no-repeat;padding: 24px 0px 24px  72px;
-        font-family: Arial, Helvetica, sans-serif;line-height: 6px;transition:0.5s;}
+        font-family: Arial, Helvetica, sans-serif;line-height: 6px;transition:0.2s;}
         .name{font-size: 18px;}
         .folder:last-child{list-style-type: "┗";}
         .empty-1{background-image: url(https://icons.iconarchive.com/icons/papirus-team/papirus-places/72/folder-red-drag-accept-icon.png);}
@@ -19,24 +19,27 @@
         .file{color: white;
         background-image: url(https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/72/Document-Write-icon.png);
         background-repeat: no-repeat;padding: 24px 0px 24px  72px;
-        font-family: Arial, Helvetica, sans-serif;line-height: 6px;}
+        font-family: Arial, Helvetica, sans-serif;line-height: 6px;transition: 0.2s;}
         .file:first-child{margin-top: 15px;}
         .file:last-child{list-style-type: "┗";}
-        .folder:hover {filter:brightness(180%);}
+        .hov1:hover {filter:brightness(180%);}
+        .hov2:hover{filter:brightness(180%);}
+        .hov3:hover{filter:brightness(180%);}
+        .file:hover{filter: sepia(100%);};
         .empty-3{margin-top: 33px;}
     </style>
 </head>
 <body>
     <ul class="tree">
-        <li class="folder"><div class="name">Project[Done]</div>
+        <li class="folder hov1"><div class="name">Project[Done]</div>
             
         <ul class="tree">
             <li class="file"><div class="name">File-1</div></li>
             <li class="file"><div class="name">File-2</div></li>
         </ul></li>
          <li class="empty-2"></li><li class="empty-2"><li class="empty-2"></li> 
-        <li class="folder empty-3"> <div class="name">Project[New]</div></li>
-        <li class="folder empty-1"> <div class="name">Project[TBD]</div></li>
+        <li class="folder hov2 empty-3"> <div class="name">Project[New]</div></li>
+        <li class="folder hov3 empty-1"> <div class="name">Project[TBD]</div></li>
 </ul>
 </body>
 </html>
