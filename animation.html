@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Section|Cleaning Services</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        .services-promo{margin: 20px;
+    background-image:radial-gradient(#99ffeb ,#0bf3c5fb 40%,transparent 41%),
+    radial-gradient(#99ffeb ,#08e2b6 40%,transparent 41%);
+    background-size: 100px 100px,50px 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0,80% 200px;
+    animation: floating 5s 10 alternate linear;
+    }
+        .services-promo h1{text-align: center;color: #0066cc;margin-bottom: 5px; animation:size-change 5s linear infinite;}
+        .services-promo h2{margin-left: 20%;color: #1a8cff;}
+        .services-promo p{margin:10px 20%;color: #0a936f;}
+        .services-promo h3{margin-left: 15%;color: #1a8cff;margin-top: 40px;}
+        .services-promo ul{margin-left: 20%;padding: 0px;list-style-position : inside;color: #05795a;}
+        .services-promo p:last-child{margin-top: 40px;font-size: 130%;color: #00b386;}
+        .services-promo a{background-color: rgba(152, 95, 14, 0.943);
+            text-decoration: none;color: antiquewhite;
+            padding: 10px 20px;
+           }
+        .services-promo a:hover{background-color: #ffaa00;} 
+        @keyframes floating{
+            from{background-position:0 0,80% 230px;}
+            to{background-position:0 50px,80% 200px;}
+        }
+        @keyframes size-change {
+    from { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    to { transform: scale(1); }
+  }
+    </style>
+</head>
+<body>
+    <header class="services-promo">
+        <h1>Cleaning Services in your country</h1>
+        <h2>We do it faster <br> and cheaper...</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci voluptatem, minus in voluptas enim, praesentium asperiores possimus, aliquam reprehenderit deserunt facilis inventore quisquam ea odit eum perspiciatis exercitationem blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta saepe dignissimos sequi, dolorem odio delectus corrupti blanditiis molestias vel, harum quidem odit mollitia atque esse cum quis fugit ullam nostrum!</p>
+    <h3>Services</h3>
+        <ul>
+        <li>Lorem.</li>
+        <li>Voluptate.</li>
+        <li>Voluptatem.</li>
+        <li>Dolorum!</li>
+        <li>Eveniet!</li>
+    </ul>
+    <p>Don't waste your time,call us <a href="#">NOW!</a></p>
+    </header>
+</body>
+</html>
