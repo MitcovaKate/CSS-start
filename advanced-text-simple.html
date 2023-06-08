@@ -10,6 +10,7 @@
    .title .line:first-child .word{
     /* border: 1px solid green; */
     font-size: 40px;}
+    .line{display:block;}
     .title .line:first-child .word:first-child span:first-child{color: #555;}
     .title .line:first-child .word:first-child span:nth-child(2){color: #777;}
     .title .line:first-child .word:first-child span:nth-child(3){color: #999;}
@@ -18,20 +19,19 @@
     </style>
 </head>
 <body>
-   <h1 class="title"><div class="line">
+   <h1 class="title"><span class="line">
     <span class="word">
     <span>F</span><span>I</span><span>R</span><span>S</span><span>T</span>
 </span><span class="word">
         <span>L</span><span>I</span><span>N</span><span>E</span>
     </span>
-</div>
-
-    <div class="line">
+</span>
+ <span class="line">
         <span class="word">
             <span>S</span><span>E</span><span>C</span><span>O</span><span>N</span><span>D</span>
         </span><span class="word">
             <span>L</span><span>I</span><span>N</span><span>E</span> 
-        </span> </div>
+        </span> </span>
    </h1> 
 </body>
 </html>
