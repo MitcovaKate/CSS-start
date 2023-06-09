@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body{background-color: darkgray;font-family: Arial, Helvetica, sans-serif;font-size: 20px;}
+        .dropdown .list{display: none;
+            background-color: rgb(203, 200, 200);margin-top: 0;margin-left: 6px;
+            width: 150px;list-style: none;padding-left: 0;}
+        .dropdown .list li{padding: 10px;}
+            .dropdown .list li a{text-decoration: none;color: black;font-size:medium;}
+        .dropdown input{display: none;}
+        .dropdown label{user-select: none;background-color: rgb(197, 188, 188);
+            border-radius: 5px;display: inline-block;
+            text-align: center;padding: 5px;width: 150px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.19);}
+            .dropdown label span{margin-right: 30px;}
+            .dropdown .list li:hover{background-color:rgb(197, 188, 188);box-shadow: inset 1px 2px 5px rgb(141, 141, 143);}
+.dropdown input:checked +label+.list{display: block;}
+.dropdown label::after{content:"⌄";}
+.dropdown input:checked+label::after{content: "⌃";}
+    </style>
+</head>
+<body>
+   <nav class="dropdown">
+    <input  type="checkbox" id="toggler">
+<label for="toggler"><span>Dropdown</span></label>
+   <ul class="list">
+    <li><a href="">item1</a></li>
+    <li><a href="">item2</a></li>
+    <li><a href="">item3</a></li>
+   </ul>
+</nav> 
+</body>
+</html>
