@@ -1,0 +1,15 @@
+body{background-color: #555;margin: 0;}
+.sub-form{background-color: #333;color: white;
+    font-family: Arial, Helvetica, sans-serif;padding: 10px;}
+    .sub-form h1{margin-bottom:10px;text-shadow: 1px 2px 5px red, -1px -2px 5px green;}
+    .sub-form label,
+    .sub-form>.options>div{display: block;padding: 5px;}
+    .sub-form>label>input{padding: 10px;
+        background-color: #bbb;border:0; border-radius: 10px;box-sizing: border-box;}
+        .sub-form>label>input:focus{background-color: white;border:0;box-shadow:4px 4px 10px orange;}
+        .sub-form>button{padding: 10px;font-size: large;margin-left: 100px;border: 0;}
+        .sub-form>button:hover{background-color: orange;transform: scale(1.2);box-shadow: 1px 2px 5px red, -1px -2px 5px green;}
+        .sub-form label:hover{color: chocolate;text-shadow: 1px 2px 5px red, -1px -2px 5px green;}
+        .sub-form>.options input{display: none;}
+        .sub-form>.options label::before{content:"□";color: #999;margin-right: 5px;font-size: 25px;}
+        .sub-form>.options input:checked+label::before{content:"▣";color: orange;margin-right: 5px;font-size: 25px;}
