@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    #business-card .name{
+     float: left;width: 180px;height:100px ;
+     border-right: 2px solid white;margin:60px 0;
+     padding-right: 5px;text-align: right;
+    }
+    #business-card .info{
+    float:left;padding-left:10px ;
+      margin-top: 50px;
+      text-align: left;  
+    }
+    #business-card .name h1{
+     color: white;font-weight:500;
+    }
+    #business-card .name h2{
+      color: rgba(204, 159, 114, 0.647);text-transform: uppercase;
+      font-weight:600;
+    }
+    #business-card .name small{
+      color: grey;
+    }
+    #business-card .info li{
+      font-size: 12px;color: grey;padding-bottom: 7px;}
+    #business-card .info p{color: white;font-size:15px;padding-bottom: 7px;}
+    #business-card .info li:nth-child(1)::before{content:"📱";padding-right:4px;}
+    #business-card .info li:nth-child(2)::before{content:"📩";padding-right:4px}
+    #business-card .info li:nth-child(3)::before{content:"🌏";padding-right:4px}
+ </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
