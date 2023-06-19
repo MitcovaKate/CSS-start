@@ -1,0 +1,13 @@
+body{
+    font-family:'Rubik', sans-serif;font-weight: 700;
+    font-size: 1.2em; background-color: #333;text-shadow: #FC0 1px 0 10px;}
+.navbar{background-color: rgb(168, 165, 165);
+    box-shadow:black 0px 30px 60px -12px inset, black 0px 18px 36px -18px inset;
+    text-align: right;}
+.navbar li{display: inline-block;
+    vertical-align: middle;padding: 5px;}
+a{text-decoration: none;color:white;}
+.navbar a::after{content:"";display: block;
+    border-bottom: 1px solid transparent ;
+    transform: translateX(100%);transition: 0.5s;}
+    .navbar a:hover::after{border-bottom-color: white;transform: translateX(0%);} 
