@@ -1,0 +1,14 @@
+body{
+    font-family:'Rubik', sans-serif;font-weight: 700;
+    font-size: 1.2em; background-color: #333;}
+.navbar{background-color: rgb(168, 165, 165);
+    display: table;width: 100%;}
+a{text-decoration: none;color:white;}
+.navbar ul{display: table-row;}
+.navbar li{display: table-cell;
+    vertical-align: middle;
+text-align: center;}
+.navbar li:first-child{padding: 0 100px 0 20px;
+text-align: left;}
+.navbar li:last-child{padding: 0 20px 0 100px;
+    text-align: right;}
