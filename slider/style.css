@@ -1,0 +1,15 @@
+body{background-color: #222;}
+.slider{color: rgb(204, 166, 240);
+    font-family: Arial, Helvetica, sans-serif;
+text-align: center;width: 300px;height: 500px;
+margin: 50px auto;text-shadow: 1px 1px 4px red;
+background-image: url(https://fastly.picsum.photos/id/320/300/500.jpg?hmac=bSHweia5xsrVpTmuVjItqwbd9c3nkVsEQo5j3x6eDok);}
+.slider img{height: 400px;
+    width: 300px;
+    object-fit: cover;
+    object-position: top;transition: 0.7s;
+    filter:grayscale() contrast(1.5) brightness(0.7);}
+    .slider a{text-decoration: none;color: rgba(16, 183, 49, 0.647);display:block ;font-size: 30px;}
+    .arrow-up{transform: translateY(-113px);}
+    .arrow-down{transform: translateY(-112px);}
+    .slider:target img{height: 100px;}
