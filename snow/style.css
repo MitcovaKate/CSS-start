@@ -1,0 +1,80 @@
+body{background-color: #dcd1c8;
+   font-family:'Rubik', sans-serif;font-weight: 700;
+   font-size: 1.2em;
+   color: rgba(112, 112, 186, 0.774);
+   box-sizing: border-box;}
+   .form{position: absolute;
+      top:10px;
+      right:-300px;width: 300px;
+      height: auto;
+      animation: roll 1.5s ;
+      animation-delay: 3s; 
+     animation-fill-mode: forwards;}
+   label{display: inline-block;}
+   h2{color: rgba(122, 146, 150, 0.476);
+      font-size: 40px;
+      font-weight:900;text-align: right;
+      margin-right: 10px;
+      text-shadow: #FC0 1px 0 10px;}
+   legend{color:rgba(112, 112, 186, 0.774);
+      text-shadow: rgb(37, 211, 211) 1px 0 10px;}
+   input{border: 1px dotted rgb(186, 186, 198);}
+   fieldset{border:2px dotted white;
+      border-radius: 5px;}
+   label{padding-bottom: 5px;}
+   #city{display: inline-block;transform: translateX(15px) translateY(30px);}
+   textarea{margin-top: 10px;
+      margin-left: 50px;
+      border:0}
+   .form fieldset:nth-child(3) label{font-size: smaller;}
+   button{background-color: rgba(222, 166, 11, 0.495);
+      text-shadow: #FC0 1px 0 10px;
+      float: right;
+      margin-right: 30px;width:70px;
+      height: 50px;border: 0;
+      border-radius: 3px;
+      padding-left: 2px;color: rgb(172, 71, 4);}
+      button:hover{transform: scale(1.2);}
+      input:focus {
+         color: #6b86a0;
+         background-color: #fff;
+         border-color: #787883;
+         outline: 0;
+         box-shadow: 0 0 0 0.2rem rgba(112, 147, 164, 0.25);
+       }
+.overlay{position: fixed;bottom: 0;top: 0;left: 0;right: 0;}
+#landscape{background-image: url(horse.jpg);}
+#snow .flake.md{animation: fall 9s linear infinite;height: 8px;width: 8px;background-image: radial-gradient(#e4eae9ae ,#73b0dc5d 80%,transparent 81%);}
+#snow .flake.small{animation: fall 12s linear infinite;
+   height: 3px;width: 3px;
+   background-image: radial-gradient( #9eb8d95d,#e4eae9ae 80%,transparent 81%);}
+#snow .flake{width: 15px;height: 15px;
+   top: -10%;
+   background-image: radial-gradient( #e4eae9ae ,#b1d4ee5d 80%,transparent 81%);
+    border: 0;
+    background-color: rgba(240, 255, 255, 0.548);border-radius: 100%;
+    position: absolute;animation: fall linear 7s infinite;}
+    #snow .flake:nth-child(1){left: 15%;animation-delay: 5s;}
+    #snow .flake:nth-child(2){left: 95%;animation-delay: 2.5s;}
+    #snow .flake:nth-child(3){left: 45%;animation-delay: 3.5s;}
+    #snow .flake:nth-child(4){left: 55%;animation-delay: 1.5s;}
+    #snow .flake.md:nth-child(5){left: 75%;animation-delay: 5.5s;}
+    #snow .flake.md:nth-child(6){left: 80%;animation-delay: 10s;}
+    #snow .flake.md:nth-child(7){left: 35%;animation-delay: 7s;}
+    #snow .flake.md:nth-child(8){left: 95%;animation-delay: 3s;}
+    #snow .flake.small:nth-child(9){left: 5%;animation-delay: 6s;}
+    #snow .flake.small:nth-child(10){left: 15%;animation-delay: 4s;}
+    #snow .flake.small:nth-child(11){left: 25%;animation-delay: 2s;} 
+    #snow .flake.small:nth-child(12){left: 75%;animation-delay: 7s;}
+     #snow .flake.small:nth-child(13){left:85%;animation-delay: 4s;}
+      #snow .flake.small:nth-child(14){left: 25%;animation-delay: 8s;} 
+      #snow .flake.small:nth-child(15){left: 65%;animation-delay: 6s;}
+       #snow .flake.small:nth-child(16){left: 95%;animation-delay: 5.5s;} 
+       .tur{position:absolute; width: 30%;height: 20%;top: 10px;right: 10px;}
+ @keyframes fall{ 
+    from{top: -10%;}
+    to{top: 100%;}}
+      @keyframes roll{  
+      from{right:-300px;}
+      to{right:0px}
+    }
