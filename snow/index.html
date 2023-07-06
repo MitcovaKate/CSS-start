@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Snow</title>
+</head>
+<body>
+    <div class="overlay" id="landscape"></div>
+    <div class="overlay" id="snow">
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake"></div>
+        <div class="flake md"></div>
+        <div class="flake md"></div>
+        <div class="flake md"></div>
+        <div class="flake md"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+        <div class="flake small"></div>
+    </div>
+    <div class="form">
+        <form>
+            <h2>Join our winter adventure</h2>
+                <fieldset><legend>Personal data</legend>
+                    <label>Your full name<input type="text"  name="fullname" maxlength="50" required></label>
+                     <label><b>Your telephone number</b></label><select required size="1" multiple name="Prefics"><option value="Pref1">+369</option>
+                        <option value="Pref2">+373</option><option value="Pref3">+380</option><option value="Pref4">+360</option></select>
+                      <input type="tel" name="phone" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" required>
+                    <label for="city">Choose your City</label>
+                    <select id="city" size="2" required>
+                      <option value="Chisinau" selected>Chisinau</option>
+                      <option value="Orhei">Orhei</option>
+                      <option value="Balti">Balti</option>
+                      <option value="Nisporeni">Nisporeni</option></select>
+                      <input type="text" maxlength="30" required pattern="[A-Za-z]+"></fieldset>
+                      <fieldset><legend>Transportation</legend>
+                        <label><input type="radio" name="value">Plane</label>
+                        <label><input type="radio" name="value">Train</label>
+                        <label><input type="radio" name="value">Car</label>
+                        <label><input type="radio" name="value" checked>Bus</label></fieldset>
+           <label><textarea placeholder="Type here..."></textarea></label></form>
+            <button>SEND</button>
+        </div>
+</body>
+</html>
