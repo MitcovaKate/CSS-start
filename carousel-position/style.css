@@ -1,0 +1,28 @@
+html{height: 100%;}
+body{background-image: radial-gradient(white,black);
+    background-repeat: no-repeat;height: 100%;margin: 0;
+    color: white;}
+.carousel{width: 500px;height: 700px;
+    margin: 100px 50px;position: relative;top: 100px;left: 50px;
+    perspective: 1000px;}
+.carousel .slide{width: 500px;height: 700px;
+position: absolute;
+transition: transform 1s,z-index 1s 0.8s;}
+ .carousel .slide a{position: absolute;right:-20px;top:50% ;}  
+    .carousel .slide a::after{content:url(chevron.svg);
+        background-color: #fff8;
+        width: 30px;height: 30px;
+        display: block;
+        border-radius: 18%;padding: 3px;}
+.slide:nth-child(1){background-color: rgba(0, 0, 255, 0.322);
+    transform: rotateY(-30deg) translateZ(-400px);filter: 80%;opacity: 0.5;}
+ .slide:nth-child(2){background-color: rgba(137, 43, 226, 0.476);
+    transform: rotateY(-30deg) translateZ(-200px);filter: 90%;opacity: 0.75;}
+.slide:nth-child(3){background-color: rgba(165, 42, 42, 0.411);
+    transform: rotateY(-30deg) translateZ(0px);}
+    #state-3:target .slide:nth-child(2){transform: rotateY(-30deg) translateZ(0px);
+        z-index: 3;} 
+    #state-3:target .slide:nth-child(3){transform: rotateY(-30deg) translateZ(-400px);
+        z-index: 1;}
+    #state-3:target .slide:nth-child(1){transform: rotateY(-30deg) translateZ(-200px);
+        z-index: 2;}  
