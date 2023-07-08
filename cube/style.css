@@ -1,0 +1,61 @@
+body{background-color: #333;}
+.container{width: 90%;
+    height: 500px;
+    margin:200px auto;
+    border: 1px dotted white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+ }
+.cube{width: 400px;height: 400px;
+    border: 1px solid green;
+    position: relative; 
+    perspective: 500px;
+    }
+    .cube>.ball{position: absolute;
+        width: 50px;
+        height: 50px;border-radius: 100%; 
+        transform: translate3d(175px,175px,-175px);}
+    .cube:hover .b1{background: radial-gradient(white,rgb(157, 130, 238)); 
+        animation: bounsing1 10s infinite;}
+    .cube:hover .b2{background: radial-gradient(white,violet);
+        animation: bounsing1 10s infinite;
+        animation-delay: -4s;}
+    .cube:hover .b3{background: radial-gradient(white,rgb(22, 168, 9)); 
+        animation: bounsing1 10s infinite;
+        animation-delay: -8s;}
+        .cube:hover .b4{background: radial-gradient(white,rgb(8, 154, 184));
+            animation: bounsing2 10s infinite;animation-delay: -2s;}
+        .cube:hover .b5{background: radial-gradient(white,rgb(218, 8, 11));
+            animation: bounsing2 10s infinite;
+            animation-delay: -4s;}
+        .cube:hover .b6{background: radial-gradient(white,rgb(170, 220, 6));
+            animation: bounsing2 10s infinite;
+            animation-delay: -8s;}
+.cube > .face{width: inherit;height: inherit;
+    font-size: 50px;
+    line-height: 400px;
+    text-align: center;
+    border: 1px solid red;position: absolute;}
+    .cube> .front{z-index: 1;}
+    .cube >.back{transform: translateZ(-400px);}
+    .cube> .left{transform: rotateY(90deg);transform-origin: left;}
+    .cube> .right{transform: rotateY(-90deg);transform-origin: right;}
+    .cube> .top{transform: rotateX(-90deg);transform-origin: top;}
+    .cube> .bottom{transform: rotateX(90deg);transform-origin: bottom;}
+    @keyframes bounsing1{
+        0%{transform: translate3d(175px,175px,-175px);}
+        25%{transform: translate3d(0px,0px,0px);}
+        50%{transform: translate3d(350px,350px,-350px);}
+        75%{transform: translate3d(0px,350px,0px);}
+        100%{transform: translate3d(350px,350px,0px);}
+    }
+    @keyframes bounsing2{
+        0%{transform: translate3d(175px,175px,-175px);}
+        25%{transform: translate3d(350px,350px,-350px);}
+        50%{transform: translate3d(0px,0px,-350px);}
+        75%{transform: translate3d(0px,350px,-350px);}
+        100%{transform: translate3d(350px,350px,-350px);}
+        
+    }
