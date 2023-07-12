@@ -1,0 +1,90 @@
+body{background-image:radial-gradient(rgb(40, 42, 39),rgb(76, 77, 75)) ;
+    perspective: 1700px;
+    --blackgreen:#194411;
+ 
+}
+.book{height:210mm ;
+width:148.5mm ;
+margin: 10% auto;
+display: block;
+font-family: 'Fascinate', cursive;
+transform: rotateY(-25deg);transform-style: preserve-3d;}
+.book:hover{transform: rotateY(-35deg);
+transition: 0.5s;
+cursor: pointer;
+}
+
+.book .front-cover{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+margin: 0;background-color: var(--blackgreen);
+transform-origin: left;
+transition: 1s;z-index: 6;
+backface-visibility: hidden;}
+
+ .book .back-front-cover{width: inherit;height: inherit;
+            display: block;background-color: var(--blackgreen);
+            position: absolute;
+            z-index: 5;
+            transform-origin: left;
+            transition: 1s;transform:rotateY(0) translateZ(-1px);
+        }
+
+ .book input{display: none;} 
+
+
+.book input[id="p1"]:checked+.front-cover,.book input[id="p1"]:checked~.back-front-cover,
+.chapter-1 input[id="p2"]:checked+.first-page{transform:rotateY(-100deg);}
+
+.book .front-cover img{width: inherit;
+    height: 80%;object-fit:cover;object-position: top;}
+    h1,h2,h3{padding-left: 5%;margin:1% 0;color:#ccd7d7;}
+    h1{color: #d9c051;font-size: 45px;
+    filter: contrast(1.85);}
+
+    .book .front-cover::before{content:"";
+        height: inherit;width: 3%;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.325) ;
+        position: absolute;}
+
+.book .front-cover::after{content:"";
+    height: inherit;width: inherit;
+    display: block;
+    background-image:linear-gradient(-75deg,rgba(255, 255, 255, 0.29)20%,transparent);
+    position: absolute;top: 0;}
+    .chapter-1{width: inherit;
+        height: inherit;position: relative;
+                transition: 0.8s;
+                cursor: pointer;}
+.book .first-page{
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            box-sizing: border-box;
+            padding: 5%;
+            transform-origin: left;
+            transition: 3s;z-index: 4;
+            transform:rotateY(0);transform-style: preserve-3d;}
+            .book .first-page h2{color: black;}
+            
+            .book .second-page{width: inherit;
+                height: inherit;
+                position: absolute;
+                color: black;font-family: Arial, Helvetica, sans-serif;
+                background-color: antiquewhite;box-sizing: border-box;padding: 5%;
+                 z-index: 3;}
+                .book .second-page h2{color: black;}
+        .book .pages{height: inherit;width: 20mm;
+           background-image:repeating-linear-gradient(90deg,black,white 0.01mm);
+            position: absolute;
+            right:-18mm;transform: rotateY(90deg);z-index: 1;
+            transform-origin: left;
+        }
+    .book .back-cover{position: absolute;background-color:var(--blackgreen);
+    margin: 0;width: inherit;height: inherit;
+        transform: translateZ(-20mm); }
