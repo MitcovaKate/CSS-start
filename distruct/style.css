@@ -1,0 +1,46 @@
+body{background-color: #222;
+    font-family: 'Fascinate', cursive;}
+.distruct{width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 30px;
+margin:100px auto;
+position: relative;
+transition:4s;
+perspective: 1000px;}
+.distruct h2,h3{margin: 0;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(82, 82, 188), 0 0 0.2em rgb(117, 117, 186);}
+.distruct h2{font-size: 60px;
+    color: orange;}
+.distruct h3{font-size: 40px;
+    color: orangered;}
+.distruct .square{
+    height: inherit;
+   width: inherit;
+    box-sizing: border-box;
+    border: 20px solid rgba(99, 51, 6, 0.47);
+position: absolute;
+top: 0;
+left: 0;}
+.distruc+.twin,.twin{width: 250px;
+    height: 250px;
+    border: 30px solid rgb(235, 205, 166);
+    position: absolute;
+filter: drop-shadow(0 0 10px black);}
+.distruct .tl-corner{
+border-right-color: transparent;
+border-bottom-color: transparent;
+top: -10px;
+left: -10px;}
+.br-corner{
+border-left-color: transparent;
+border-top-color: transparent;
+bottom: -10px;
+right: -10px;}
+.distruct:hover .tl-corner{transform: translate3d(-25px,-25px,150px);}
+.distruct:hover .br-corner{transform: translate3d(25px,25px,150px);}
+.distruct:hover .square{transform: translateZ(-300px);}
+.distruct:hover h2{transform: translate3d(-20px,-35px,100px);}
+.distruct:hover h3{transform: translate3d(100px,80px,100px);}
