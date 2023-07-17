@@ -99,6 +99,7 @@ backface-visibility: hidden;}
             transform-origin:left;
             transition: 3s;
             z-index: 4;
+            backface-visibility: hidden;
             transform:rotateY(0);
             transform-style: preserve-3d;}
  .book .first-page h2{color: black;}
