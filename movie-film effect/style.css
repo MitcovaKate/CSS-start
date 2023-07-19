@@ -1,0 +1,88 @@
+body{background-image: url(font.png);
+    --size:40vh;
+--count:7;
+--bottom-marker:calc(var(--size) * 0.92 * 0.78);
+--top-marker:calc(var(--size) * 0.04 * 0.78);}
+
+.movie{
+    height: var(--size);
+width: var(--size);
+margin-top: calc((100vh - var(--size)) / 2 - 5px);
+margin-left: calc(100vw / 3 - var(--size) / 2);
+border-radius: 100%;
+background: radial-gradient(#a0a84b , black 95%);}
+.movie .film{ 
+    background-image: 
+    linear-gradient(transparent,transparent var(--top-marker),#1239 var(--top-marker),#1239 var(--bottom-marker),transparent var(--bottom-marker)),
+    radial-gradient(transparent 50%,#1239 50%),
+    radial-gradient(transparent 50%,#1239 50%);
+    background-size: 
+    cover,
+    var(--top-marker) var(--top-marker),
+    var(--top-marker) var(--top-marker);
+background-repeat: repeat,
+repeat-x,
+repeat-x;
+background-position: 
+top left,
+top left,
+bottom left;
+filter: drop-shadow(2px 2px 6px black);
+
+    height:calc(var(--size) * 0.75) ;
+    /* calc(var(--size) / 4 * 3);    variant 2*/
+ 
+    /*width: 100vw;
+margin-left: calc(var(--size) * -6 / 5 );/* variant 2 */
+
+position: absolute; /*(variant 1)*/ 
+left: 0;
+right: 0; 
+ top: 0;
+bottom: 0; /* horizontal alingment */
+ margin: auto; 
+
+ width:calc(var(--count) * (var(--bottom-marker) * 4/3 + 1.9vh)) ;
+/*display: flex;
+   flex-wrap: nowrap;    horizontal alingment var2
+   flex-direction: row;
+    gap: 0.6%;  */
+ 
+}
+.film img{
+   height:calc(var(--bottom-marker) - 7px);
+  margin: 0 0.5vh;
+    margin-top: 0.45%;  
+}
+.controls{
+background: radial-gradient(rgba(139, 136, 136, 0.425)90%, rgba(0, 0, 0, 0.891) );;
+position: absolute;
+height: calc(var(--size) * 0.8);
+width: calc(var(--size) * 0.8);
+top: 0;bottom:0;right: 0; left: 0;
+/* calc(var(--size) / 1.19 ); */
+
+ margin: auto;
+ margin-left: calc(100vw / 3 - var(--size) / 2.5);
+ /* calc(var(--size) * 2 / 1.41);  */
+border-radius: 100%;
+
+}
+.controls button{
+position: absolute;
+ border: 0;
+border-radius: 0;
+background: transparent;
+width: 60px;
+height: 60px;
+font-size: 60px;
+top: 0;
+bottom: 0;left: 0;
+right: 0;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;color: white;
+ }
+ 
