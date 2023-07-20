@@ -1,4 +1,6 @@
-body{background-image:radial-gradient(farthest-corner at 37% 45%, transparent ,#1239 70%,black 90%) ,url(font.png); 
+body{background-image:radial-gradient(circle
+/*         closest-side at 37% 45% , */
+    farthest-corner at 33vw, transparent ,#1239 70%,black 90%) ,url(font.png); 
     height: 100vh;
     --size:40vh;
 --count:7;
