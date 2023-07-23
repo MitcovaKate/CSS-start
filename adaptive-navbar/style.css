@@ -13,17 +13,16 @@
      vertical-align: middle;
     padding: 1em;
     color: white;}
-        .navbar a:first-child{
+        .navbar .a1{
         margin-right: 3em;
         font-size: 1.5em; ;}
-           
 i{transform: translateY(45%);}
-input{display: none;}   
+ input{display: none;}    
     @media (max-width:720px){
       a{display: none;} 
 
-a:first-child,.navbar .menu{display: inline-block;}
-a:first-child{padding-left:0 ;}
+.a1,.navbar .menu{display: inline-block;}
+.a1{padding-left:0 ;}
 .menu{ color: white;
             position: absolute;
             border: 1px solid white;
@@ -33,8 +32,10 @@ a:first-child{padding-left:0 ;}
         text-align: center;
         right: 10%;
        top: 1em;}
- input:checked a:nth-child(2),
-input:checked a:nth-child(3),
-input:checked a:nth-child(4),
-input:checked a:nth-child(5){display:block;}  
+       #p1:checked~.a2{
+        display: block; 
+        background-color: #001;
+        margin: -1px 0;
+        width: 8em;
+        transform: translate(-25.2em,2.2em);}
  }
