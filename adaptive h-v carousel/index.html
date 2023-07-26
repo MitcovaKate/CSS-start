@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adaptive H-V carousel</title>
+</head>
+<body>
+    <section class="carousel">
+         <div class="track">
+        <div id="s-1">
+            <picture>
+            <source srcset="images/pic1.jpg" media="(min-width:1300px)">
+            <img src="images/1-sl.png" alt="Slide1">
+            </picture>
+            <div class="controls">
+            <a href="#s-5">prev</a>
+            <a href="#s-2">next</a>
+     </div></div><div id="s-2">
+        <picture>
+            <source srcset="images/pic2.jpg" media="(min-width:1300px)">
+            <img src="images/2-sl.png" alt="Slide2"></picture>
+            <div class="controls">
+            <a href="#s-1">prev</a>
+            <a href="#s-3">next</a></div></div><div id="s-3">
+            <picture>
+                <source srcset="images/pic3.jpg" media="(min-width:1300px)">
+                <img src="images/3-sl.png" alt="Slide3"></picture>
+                <div class="controls">
+                <a href="#s-2">prev</a>
+                <a href="#s-4">next</a></div></div><div id="s-4">
+            <picture>
+            <source srcset="images/pic4.jpg" media="(min-width:1300px)">
+            <img src="images/4-sl.png" alt="Slide4"></picture>
+            <div class="controls">
+            <a href="#s-3">prev</a>
+            <a href="#s-5">next</a></div></div><div id="s-5">
+            <picture>
+            <source srcset="images/pic5.jpg" media="(min-width:1300px)">
+            <img src="images/5-sl.png" alt="Slide5"></picture>
+            <div class="controls">
+            <a href="#s-4">prev</a>
+            <a href="#s-1">next</a></div></div></div>
+    </section>
+</body>
+</html>
