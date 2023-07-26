@@ -1,0 +1,53 @@
+body{
+    --color-light:rgb(227, 227, 239);
+    --bg-color:#333;
+    --color-active:rgba(255, 0, 0, 0.554);
+
+    background-color: var(--bg-color);
+}
+.carousel{
+    width: 80%;
+    margin: 10% auto;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+@media(min-width:800px){
+.carousel{width: 700px;
+    margin: 70px auto;}}
+.carousel .track{width: 500%;}
+
+
+.carousel .track >div{
+ /* border: 3px solid green; */
+ width: 20%;
+display: inline-block;
+vertical-align: top;
+}
+
+   .carousel .track div img {width: 100%;
+   opacity: 0;
+   transition: 1s;}
+.carousel .track div:nth-child(1) img{
+    opacity: 1;
+}
+.carousel .track div:target img{
+    opacity: 1;}
+
+    .controls {text-align: center;
+    margin: 1em 0;}
+
+    .controls a{
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+background-color: brown;
+border-radius: 100%;
+color: transparent;
+margin: 0 1em;
+background-color: var(--color-light);
+}
+.controls a:first-child{background-image: url(icons/arrow-left-bold-circle.svg);}
+.controls a:last-child{background-image: url(icons/arrow-right-bold-circle.svg);}
+.controls a:hover{background-color: var(--color-active);
+    transform:scale(120%,120%);
+    filter:drop-shadow(0 0 0.75rem crimson)}
