@@ -1,0 +1,250 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+background-color: var(--Medium-light-Blue);
+--Melrose: #aea8d8;
+--Free-Speech-Blue:#8A2BFF;
+--Medium-Slate-Blue:#6863F2;
+--Medium-light-Blue:#9C99F2;
+--LightGray:#F2F2F2;
+--DarkGray:#333;
+--DarckSilver:rgb(139, 131, 131);
+--DeapSilver:rgba(153, 153, 153, 0.395);
+--shadow-1:rgba(71, 34, 80, 0.35);
+--Height:1136px;
+--Width:640px;
+}
+/* .mockPhone{
+    background-color: var(--Medium-light-Blue);
+     transform: scale(0.8);
+    display: inline-block;
+padding:45px 20px;
+border-radius:30px;
+box-shadow: -2px 20px 17px -2px var(--shadow-1) inset;
+filter: drop-shadow(-35px 35px 32px var(--DarkGray));} */
+
+
+/* .deco{
+    position: absolute;
+    border: 1px solid var(--DarckSilver);
+    background-color: var(--Medium-light-Blue);
+    border-radius: 4px;
+    margin: 0 auto;}
+.micro1{
+    width: 100px;
+    height: 8px;
+    right: 0;
+    left:0;
+    top: 2%;
+     box-shadow: 0.5px -1px 2px 3px var(--shadow-1) inset;}
+.button{
+   left: -1.3%;
+   width: 8px;
+   }
+
+#b1{ top: 10%; 
+    height: 200px;}
+#b2{
+   top: 30%;
+    height: 100px;
+    } */
+
+
+/* .screen{
+    width: var(--Width);
+    height: var(--Height);
+    border:1px solid var(--DarkGray)} */
+   
+
+#viber-app{
+    background-color: var(--LightGray);
+    width: 100%;
+    height: 100vh;
+    border-radius:30px;
+    position: relative;
+
+}
+#viber-app header{
+background-color: var(--LightGray);
+height: 7%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items:center;
+}
+
+header .h-viber{
+    margin-left: 5%;}
+header .h-viber h1{
+    font-weight: 900;
+    font-size:2em;}
+header .h-glass{
+    color: var(--Free-Speech-Blue);
+
+margin-right: 3%;
+font-size: 2em;}
+
+#viber-app section
+{height: 86%;
+background-color: #aea8d8;
+position: relative;
+}
+
+#viber-app footer{
+background-color: var(--LightGray);
+height: 7%;
+width: 100%;}
+
+#viber-app .contacts{
+    height: 100%;
+background-color:var(--LightGray);
+overflow-y: scroll;
+scroll-snap-type:y mandatory;
+}
+
+#viber-app .contacts::-webkit-scrollbar{
+    background-color: var(--Free-Speech-Blue);
+   width: 7px;
+   position: fixed;
+   display: none;
+}
+#viber-app .contacts:hover::-webkit-scrollbar,
+#viber-app .contacts:active::-webkit-scrollbar{
+    display: block;
+}
+
+#viber-app .contacts li{height: calc(100% / 7.6);
+border-top: 1px solid var(--DeapSilver);
+border-bottom:1px solid var(--DeapSilver);
+box-sizing: border-box;
+scroll-snap-align: start;
+}
+
+@media(orientation:landscape){
+    #viber-app .contacts li{height: calc(100% / 3.6);}}
+@media(orientation:landscape)and(min-aspect-ratio:18/10){
+    #viber-app .contacts li{height: calc(100% / 2.6);}
+}
+   
+
+
+.contacts li a{
+    text-decoration: none;
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+.contact img{
+    height:18%;
+     width: 18%;
+}
+.text{align-self: baseline;
+    padding-top:5% ;
+    margin-left: -10%;}
+.contact h2{
+    margin-bottom: 3%;
+    font-weight: 900;
+    font-size: 1.7em;
+    color: black;}
+   
+.contact p{
+    font-size: 1.2em;
+    color: var(--DarckSilver);
+   
+   }
+.data{
+    display: flex;
+    padding-top: 4%;
+    position: relative;
+    font-size: 1.2em;}
+.data .status{
+    padding-right: 0.5em;
+    padding-bottom: 5%;}
+.data .time{
+    color: var(--DarckSilver);
+    padding-right: 1.5em;
+    padding-bottom: 5%;
+}
+.data .count{
+    width: 30px;
+    height: 30px;
+border-radius: 100%;
+background-color: var(--Free-Speech-Blue);
+color: var(--LightGray);
+display: flex;
+justify-content: center;
+align-items: center;
+ position: absolute;
+right: 35%;
+bottom: -60%;
+}
+
+li:nth-child(3) .data .status{
+    color: var(--DarckSilver);}
+
+li:nth-child(4) .contact
+{width: 80%;}
+ li:nth-child(4) i{
+    color:var(--DarckSilver);
+    font-size: 1em;}
+ li:nth-child(4) p>i{
+    margin-right: 2%;}
+li:nth-child(4) .data .count{
+    width: 45px;
+    border-radius: 35%;
+    background-color: var(--DarckSilver);}
+li:nth-child(4) .data .status{
+    color: var(--DarckSilver);}
+
+    li:nth-child(6) .text h2::before{
+    content: '';
+    background-color:rgb(7, 194, 194);
+width: 1em;
+height: 1em;
+border-radius: 100%;
+display: inline-block;
+transform: translateX(6.2em);
+}
+    li:nth-child(6) .text h2::after{
+        content: '';
+        border-style: solid;
+        border-width: 0.10em 0.10em 0 0;
+        display: inline-block;
+        height: 0.45em;
+        left: 0.4em;
+        position: relative;
+        top: 0;
+	    transform: rotate(135deg);
+        vertical-align: top;
+        width: 0.45em;
+        color: var(--LightGray);}
+
+
+
+        footer{display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2.5em;
+        color: var(--DarckSilver);
+   }
+   footer .message{
+    color: var(--Free-Speech-Blue);}
+    footer .message-2{
+        position:  absolute;
+        transform: translate(220px,-90px);
+        
+    }
+        footer .message-2 i{
+        position: absolute;
+        width: 1.3em;
+        height: 1.3em;
+        border-radius: 100%;
+        background-color: #8A2BFF;
+       color: var(--LightGray);
+       padding-left: 0.3em;
+       padding-top:0.3em;
+    }
