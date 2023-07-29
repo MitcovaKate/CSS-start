@@ -1,0 +1,93 @@
+body{
+    font-family: 'REM', sans-serif;
+    --darkgrey:#222;
+    --light:white;text-align: center;
+background-color:var(--darkgrey) ;}
+a{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+    text-shadow: 0.5px 0.5px 1px rgba(223, 85, 85, 0.676), 0 0 0.5em rgba(0, 0, 255, 0.667), 0 0 0.1em rgba(63, 63, 234, 0.986);
+}
+.greedy-nav{
+    display: table;
+background-color: #fff;
+width: 90%;
+margin:5vh auto;
+position: relative;}
+
+.greedy-nav ul{
+    display: table-row;}
+
+.greedy-nav ul li
+{display: table-cell;
+border-right:1px solid var(--darkgrey);
+padding: 1em;
+min-width: 5em;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;}
+
+.greedy-nav ul li:last-child{
+border-right: none;}
+
+.greedy-nav ul .bars{
+    display: none;
+width: 1em;
+background-color: #555;}
+
+.greedy-nav ul .bars a{
+    color: var(--light);}
+
+@media(max-width:1140px){
+    .greedy-nav ul .lg{
+    display: none;}
+    .greedy-nav ul .bars{
+        display: table-cell;
+    position: relative;
+filter: brightness(130%);}
+    .greedy-nav ul .bars::before{
+        content:"2";
+        color: var(--light);
+        position: absolute;
+        background-color: red;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        text-align: center;
+        left: -0.75em;
+    }
+    #greedy:target .lg:nth-child(8){
+        top:3.5em;right: 0;}
+    #greedy:target .lg:nth-child(9){
+         top:6.5em;right: 0;}
+         #greedy:target .lg{
+        display: block;
+    position: absolute;
+    background-color:#fff;
+    width: 8em;
+    border-top:1px solid var(--darkgrey) ;}
+}
+
+@media(max-width:900px){
+    .greedy-nav ul .md{
+    display: none;}
+    
+.greedy-nav ul .bars::before{
+    content:"4";
+   }
+#greedy:target .lg,
+#greedy:target .md{
+    display: block;
+position: absolute;
+background-color:#fff;
+width: 8em;
+border-top:1px solid var(--darkgrey) ;}
+#greedy:target .md:nth-child(6){
+    top:3.5em;right: 0;border-top: none;}
+    #greedy:target .md:nth-child(7){
+    top:6.5em;right: 0;}
+    #greedy:target .lg:nth-child(8){
+        top:9.5em;right: 0;}
+    #greedy:target .lg:nth-child(9){
+         top:12.5em;right: 0;}
+}
+
+
