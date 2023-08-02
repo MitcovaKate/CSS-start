@@ -1,6 +1,7 @@
 body{
     background-color: #333;
     margin: 0;
+    --green:rgb(53, 72, 53);
 }
 .navbar{
     background-color: #777;
@@ -10,34 +11,33 @@ body{
 }
 .navbar-notification label{
     background-color: coral;
-    /* mask:url(bell.svg); */
-    /* --webkit-mask:url(bell.svg); */
+    mask:url(bell.svg); 
+    --webkit-mask:url(bell.svg); 
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
-    width:2rem;
-    height:2rem;
+    width:var(--size);
+    height:var(--size);
     cursor: pointer;
 transform: rotate(0);
 transform-origin:top ;
 animation: swing 0.2s 5;}
 
 
-@keyframes swing{
-    0% {transform:rotate(0)}
-    25% {transform:rotate(15deg)}
-    50% {transform:rotate(0)}
-    75% {transform:rotate(-15deg)}
-    100% {transform:rotate(0)}
-}
+
 
     .navbar-notification{
         display: inline-block;
         vertical-align: middle;
         margin-left: 5em;
         position: relative;
+        --size:2rem;
+    }
+
+    @media(max-width:1000px){
+        .navbar-notification{--size:1rem;} 
     }
 
     .navbar span{
@@ -48,24 +48,66 @@ animation: swing 0.2s 5;}
         display: none;
     }
     .note{ 
-        color: aqua;
+        display: inline-block;
+        line-height: 1em;
         position: absolute;
         background-color: red;
-        width: 1.1em;
-        height: 1.1em;
+        font-size: calc(var(--size) / 2);
+        width: 1em;
+        height: 1em;
         border-radius: 100%;
         text-align: center;
-        left:1.3em;
-        top:0.1em;
+        top:0;
+        right: 0;
         opacity: 0;
     animation: show 1.5s;
     animation-delay: 2s; 
     animation-fill-mode: forwards;
 }
-        @keyframes show{  
-            from{transform:scale(0);opacity: 0;}
-            to{transform:scale(1);opacity: 1;}
-          }
-    
+.dropdown{
+    display: none;
+    position: absolute;
+    width: calc(var(--size) * 8);
+top: 5vh;
+left: -6vw;
+filter: drop-shadow(0 0 0.75rem #222);
+font-size: 1rem;
+}
+    .dropdown ul{
+        padding: 0;
+        margin: 0;}
+.dropdown ul li{
+    background-color:var(--green);
+    list-style: none;
+   margin-bottom: 2%;
+    padding: 1rem 0 1rem 0.5rem;
+    border-radius: 1.5em;
+}
+.dropdown ul li:first-child{
+    border-top: none;
+}
+.dropdown:after{ content: '';
+    position: absolute;
+    background: var(--green);
+    left: 45%; top: -5%;
+    width: 20px; height: 20px;
+    z-index: -1; 
+    transform: rotate(45deg);} 
+
+
+input:checked+.dropdown {display: block;}
+
+
+@keyframes swing{
+    0% {transform:rotate(0)}
+    25% {transform:rotate(15deg)}
+    50% {transform:rotate(0)}
+    75% {transform:rotate(-15deg)}
+    100% {transform:rotate(0)}
+}
+ @keyframes show{  
+ from{transform:scale(0);opacity: 0;}
+ to{transform:scale(1);opacity: 1;}
+ }
         
  
