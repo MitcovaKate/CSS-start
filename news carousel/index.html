@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+    <title>News Carousel</title>
+</head>
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><article>
+            <h2>News Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem delectus ratione illo soluta ducimus quasi velit, sit, cumque voluptas voluptatum ex nam impedit recusandae qui laborum reiciendis error eveniet magnam distinctio? Doloremque labore quo libero repellendus quod id perferendis earum delectus sunt facere! Repellat officiis itaque ab iusto, qui eligendi? Mollitia suscipit iure nostrum reiciendis inventore sed, esse at deserunt tempora itaque nemo hic accusamus fuga, magnam quae ipsam dolorem voluptatum, recusandae velit deleniti amet nihil repellendus qui officia. Quaerat incidunt cum veritatis culpa doloribus, necessitatibus non! Adipisci omnis illo vero totam saepe nostrum eos pariatur cupiditate quo perspiciatis!</p>
+            <img src="https://fastly.picsum.photos/id/93/400/400.jpg?hmac=DZ9BUI1apmCywtnDljMdDRM341iyTC6yWc2Pn_helvQ" alt="">
+          </article></div>
+          <div class="swiper-slide"><article>
+            <h2>News Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem delectus ratione illo soluta ducimus quasi velit, sit, cumque voluptas voluptatum ex nam impedit recusandae qui laborum reiciendis error eveniet magnam distinctio? Doloremque labore quo libero repellendus quod id perferendis earum delectus sunt facere! Repellat officiis itaque ab iusto, qui eligendi? Mollitia suscipit iure nostrum reiciendis inventore sed, esse at deserunt tempora itaque nemo hic accusamus fuga, magnam quae ipsam dolorem voluptatum, recusandae velit deleniti amet nihil repellendus qui officia. Quaerat incidunt cum veritatis culpa doloribus, necessitatibus non! Adipisci omnis illo vero totam saepe nostrum eos pariatur cupiditate quo perspiciatis!</p>
+            <img src="https://fastly.picsum.photos/id/415/400/400.jpg?hmac=1E7bYyPpTXUqimKg--mp5Gw4WHh1LEfBT5siY73IWDU" alt="">
+          </article></div>
+          <div class="swiper-slide"><article>
+            <h2>News Title 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rem delectus ratione illo soluta ducimus quasi velit, sit, cumque voluptas voluptatum ex nam impedit recusandae qui laborum reiciendis error eveniet magnam distinctio? Doloremque labore quo libero repellendus quod id perferendis earum delectus sunt facere! Repellat officiis itaque ab iusto, qui eligendi? Mollitia suscipit iure nostrum reiciendis inventore sed, esse at deserunt tempora itaque nemo hic accusamus fuga, magnam quae ipsam dolorem voluptatum, recusandae velit deleniti amet nihil repellendus qui officia. Quaerat incidunt cum veritatis culpa doloribus, necessitatibus non! Adipisci omnis illo vero totam saepe nostrum eos pariatur cupiditate quo perspiciatis!</p>
+            <img src="https://fastly.picsum.photos/id/259/400/400.jpg?hmac=4KowbXVx0P_Fz_KnmUxeF7sD4X8p-k-KxOoehwXGQ3Q" alt="">
+          </article></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+</body>
+</html>
